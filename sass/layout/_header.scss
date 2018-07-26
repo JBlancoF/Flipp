@@ -1,0 +1,64 @@
+.header{
+    height: 80vh;
+    margin: 3rem;
+    background: $color-grey-dark;
+}
+
+.card{
+    perspective: 150rem;
+    position: relative;
+    height: 8rem;
+
+
+    &__side{
+        background: orange;
+        margin-top: 10rem;
+        color: white;
+        font-size:2rem;
+        height: 8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition:all 0.8s ease;
+        -webkit-transition:all 0.8s ease;
+        -moz-transition:all 0.8s ease;
+        -ms-transition:all 0.8s ease;
+        -o-transition:all 0.8s ease;
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+        width: 100%;
+        border-radius: 3px;  
+        box-shadow: 0 1.5 4rem rgba($color-black, .15);               
+        
+        &-front{
+           background: orange;
+        }
+
+        &-back{
+            background: rgb(226, 112, 18);
+            transform: rotateY(180deg)   ;
+            -webkit-transform: rotateY(180deg)   ;
+            -moz-transform: rotateY(180deg)   ;
+            -ms-transform: rotateY(180deg)   ;
+            -o-transform: rotateY(180deg)   ;
+    
+        }
+    }
+
+    &:hover &__side-front{
+        transform: rotateY(180deg)   ;
+        -webkit-transform: rotateY(180deg)   ;
+        -moz-transform: rotateY(180deg)   ;
+        -ms-transform: rotateY(180deg)   ;
+        -o-transform: rotateY(180deg)   ;
+    }
+
+    &:hover &__side-back{
+        transform: rotateY(0deg)   ;
+        -webkit-transform: rotateY(0deg)   ;
+        -moz-transform: rotateY(0deg)   ;
+        -ms-transform: rotateY(0deg)   ;
+        -o-transform: rotateY(0deg)   ;
+}
+
+}

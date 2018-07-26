@@ -1,0 +1,38 @@
+.navigation{
+    padding-top: 3rem; 
+    text-align: center;
+    &__menu{
+        display: inline-block;
+        border-bottom: 1px black solid;
+        li{
+            display: inline-block;
+            font-size: 2rem;
+            padding: 2rem;
+            a{
+                text-decoration: none;
+                color: $color-black;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__logoLeft{
+        position: absolute;
+        top: 5rem;
+        left: 40rem;
+        height: 4rem;
+        margin: 0 2rem;
+        line-height: 1rem;
+    }
+
+    &__logoRigth{
+        position: absolute;
+        top: 5rem;
+        right: 40rem;
+        height: 4rem;
+        margin: 0 2rem;
+        line-height: 1rem;
+    }
+
+}
+
