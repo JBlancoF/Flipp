@@ -75,7 +75,8 @@ body {
 .header {
   height: 80vh;
   margin: 3rem;
-  background: #777; }
+  background: rgba(119, 119, 119, 0.1);
+  box-shadow: 0 15px 10px #777; }
 
 .card {
   perspective: 150rem;
@@ -86,7 +87,7 @@ body {
     margin-top: 10rem;
     color: white;
     font-size: 2rem;
-    height: 8rem;
+    height: 50rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -110,11 +111,11 @@ body {
       -ms-transform: rotateY(180deg);
       -o-transform: rotateY(180deg); }
   .card:hover .card__side-front {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg); }
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg); }
   .card:hover .card__side-back {
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
